@@ -1,0 +1,34 @@
+
+{% for item in include.requirements %}
+  <p class="ml-{{ include.level }}">
+    {% if item.number %}
+    <a href='{{ site.baseurl }}/#{{ item.number }}'>{{ item.number }}</a> 
+    <a id='{{ item.number }}'></a> 
+    {% endif %}
+    {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
+
+  {% if item.sections %}
+  {% for section in item.sections %}
+  <table>
+    <tr>
+      <th>{{ section.name }}</th>
+    </tr>
+    <tr>
+      <td>
+        {% if section.requirements %}
+          {% assign level = include.level | plus:1 %}
+          {% include Nouded.html requirements=section.requirements level=level %}
+        {% endif %}
+      </td>
+    </tr>
+  </table>
+  {% endfor %}
+  {% endif %}
+
+  {% if item.requirements %}
+    {% assign level = include.level | plus:1 %}
+    {% include Nouded.html requirements=item.requirements level=level %}
+  {% endif %}
+
+  </p>
+{% endfor %}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
+    <style>
+      .kategooria {
+        margin-top: 1rem;
+      }
+      .rida {
+        margin-top: 1rem;
+      }
+      .rida p {
+        display: inline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p>
+        Eesti.ee mittefunktsionaalsed nõuded. v {{ site.version }}
+      </p>
+      <p><strong>Mõisted</strong></p>
+      {% for rida in site.data.Moisted %}
+        <div class='rida'>
+          {{ rida.moiste | markdownify }} - {{ rida.selgitus | markdownify }}
+        </div>
+      {% endfor %}
+
+      <p><strong>Nõuded</strong></p>
+      {% for kategooria in site.data.Nouded %}
+        {% capture abikn2 %}{% increment kn2 %}{% endcapture %}
+        <p class='kategooria'>{{ kategooria.nimetus }}</p>
+        {% for noue in kategooria.nouded %}
+          <div class='rida'>
+            {{ abikn2 }}.{{ noue.nr }}. {{ noue.son | markdownify }}{{ noue.sel | markdownify }}
+          </div>
+      {% endfor %} {% endfor %}
+    </div>
+  </body>
+
+</html>

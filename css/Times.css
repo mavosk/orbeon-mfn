@@ -1,0 +1,256 @@
+/*#region Valgustusrežiim */
+html, html[data-theme='light'] {
+  --tavaline-tekst: #222325;
+  --taust: White;
+  --note-taust: #F6F9F8;
+  --adv-taust: LavenderBlush;
+  --kood: #222325;
+  --koodi-taust: #f6f8fa; /* nagu GitHubis */
+  --koodi-serv: Whitesmoke;
+  --arenduses: Tomato;
+}
+
+html[data-theme='dark'] {
+  --tavaline-tekst: Silver;
+  --taust: Black;
+  --note-taust: DimGray;
+  --adv-taust: DimGray;
+  --kood: Silver;
+  --koodi-taust: Black;
+  --koodi-serv: DimGrey;
+  --arenduses: Gray;
+}
+
+/*#region Paigutus */
+body {
+  max-width: 55em;
+  margin: 0 0 0 2rem; 
+  padding: 0 0 2em 0; 
+  /* font-family: 'Segoe UI', Arial, serif; */
+  font-family: Arial, sans-serif;
+  font-size: 17px; 
+  color: #222325 !important;
+  line-height: 1.4 !important;
+  }
+
+/* Päis ja jalus */
+.pais, .jalus {
+  padding-top: 1em;
+}
+.pais { 
+  background-color: whitesmoke;
+  margin-bottom: 8px;
+  padding-bottom: 0.6em;
+}
+.jalus {
+  border-top: 1px solid #607D8B;
+  margin-top: 4em;
+  padding-bottom: 4em;
+}
+
+/*#endregion */
+
+/*#region Pealkirjad */
+h1 {
+  font-size: 24px !important;
+  font-family: 'Segoe UI Semibold', Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1rem;
+}
+h2 {
+  /* font-size: 13pt !important; */
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+h3, h4 {
+  font-size: 1em !important;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+/*#endregion */
+
+/*#region Tekst */
+p { margin: 0 0 1em 0; }
+.vaike { font-size: 9pt; }
+/* Allkriipsutus */
+.u { text-decoration: underline; }
+
+/* Plokktsitaat */
+blockquote { 
+  font-style: italic; 
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 16px;
+  margin-left: 0;
+}
+/*#endregion */
+
+/*#region Loetelud */
+ul {
+  list-style-type: '-  ';
+  margin: 0 0 1em 0;
+  padding-left: 1em;
+}
+ol {
+  padding-left: 1em;
+}
+/*#endregion */
+
+/*#region TOC genereeritud */
+#markdown-toc { padding-left: 0 !important; }
+#markdown-toc li:before {
+    content: none !important;
+    margin-left: 0 !important;
+}
+#markdown-toc > li {
+  list-style: none;
+}
+/*#endregion */
+
+/*#region Tabelid */
+table { width: 100%; margin: 0 4em 2em 0; }
+table { border-collapse: collapse; }    
+table, th, td { 
+  border: 1px solid black; 
+  text-align: left;
+}
+th {
+  background-color: #f7f7f7;
+}
+th, td { padding: 6px; }
+/*#endregion */
+
+/*#region Kood; asciiflow joonised */
+pre, code, samp {
+  font-family: monospace;
+  font-size: 17px;
+  color: var(--kood) !important;
+  background-color: var(--koodi-taust);
+  border: 1px solid var(--koodi-serv);
+  border-radius: 4px;
+  padding: 4px;
+  white-space:pre-wrap;
+  overflow-y: hidden; overflow-x: hidden;
+  page-break-inside: avoid; hyphens: none;
+  text-transform: none;
+}
+/* Mitmerealised kooditükid, nn "tarade" vahel esitatakse
+  <pre><code> ... kujul. Nendel ääris sea ainult pre elemendile
+*/
+pre code,
+code code {
+  border: none;
+  font-size: 100%;
+}
+pre { margin-top: 1em; margin-bottom: 1em; }
+/*#endregion */
+
+/*#region Lingid */
+a[href] {
+  color: #607D8B;
+  text-decoration: none;
+  border-bottom: 1px dotted #607D8B;
+  padding: 0 1px 0;
+  margin: 0 -1px 0;
+}
+a:visited {
+  border-bottom-color: #607D8B;
+}
+
+a[href]:focus,
+a[href]:hover {
+  background: #607D8B;
+  background: rgba(75%, 75%, 75%, .25);
+  border-bottom-width: 3px;
+  margin-bottom: -2px;
+}
+/*#endregion */
+
+/*#region Sildid */
+.silt {
+  color: black;
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 4px;
+}
+.silt, .silditekst {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10pt;
+  letter-spacing: 2px;
+}
+.tahtis {
+  color: tomato !important;
+  border-color: tomato !important;
+}
+.loosung {
+  color: black;
+  background-color: lavender;
+  font-style: italic;
+  padding-left: 2rem;
+}
+
+.kategooria {
+  text-decoration: underline;
+}
+
+.noue {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+/*#endregion */
+
+/*#region Esiletõsted */
+.note, .adv {
+  padding: .5em;
+  border: .5em;
+  border-left-style: solid;
+  page-break-inside: avoid;
+  margin: 1em auto;
+}  
+
+.note {
+  border-color: #52E052;
+  background: #F6F9F8;
+  overflow: auto;
+}
+
+.adv {
+  border-color: tomato;
+  border-style: none solid;
+  background: LavenderBlush;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.ml-3 {
+  margin-left: 3rem;
+}
+.ml-4 {
+  margin-left: 4rem;
+}
+.ml-5 {
+  margin-left: 5rem;
+}
+.ml-6 {
+  margin-left: 6rem;
+}
+.ml-7 {
+  margin-left: 7rem;
+}
+.ml-8 {
+  margin-left: 8rem;
+}
+.ml-9 {
+  margin-left: 9rem;
+}
+.ml-10 {
+  margin-left: 10rem;
+}
+/*#endregion */

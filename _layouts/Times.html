@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Eesti.ee MFN v{{ site.version }}</title>
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/GitHub.css">
+
+</head>
+
+<body>
+  {% include Pais.html %}
+  
+  {{ content }}
+  
+  {% if page.moisted %}
+    <h2>Mõisted</h2>
+    {% include MoistedTabel.html %}
+  {% endif %}
+
+  <p></p>
+
+  {% if page.nouded %}
+    <h2>Nõuded</h2>
+    {% include Tabel.html %}
+  {% endif %}
+
+  {% include Jalus.html %}
+</body>
+
+</html>

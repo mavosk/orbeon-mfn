@@ -1,0 +1,11 @@
+{% for category in site.data.Nouded %}
+  <h2>{{ category.title }}</h2>
+  {% if category.notes %}
+  <p class="adv">{{ category.notes }}</p>
+  {% endif %}
+
+  {% assign level = 0 %}
+  {% include Nouded.html requirements = category.requirements level=level %}
+
+{% endfor %}
+

@@ -1,0 +1,11 @@
+title: Eesti.ee MFN
+baseurl: "https://e-gov.github.io/eesti-ee-mfn"
+version: 1.0
+
+defaults:
+  -
+    scope:
+      path: "" # Kõik failid
+    values:
+      layout: "Times"
+      pais: "true"

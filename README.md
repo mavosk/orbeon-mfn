@@ -1,4 +1,4 @@
-# Eesti.ee mittefunktsionaalsed nõuded (MFN)
+# Nõuded eesti.ee-ga liituvatele teenustele (Orbeon xForms)
 
 # Kuidas mõistet lisada?
 

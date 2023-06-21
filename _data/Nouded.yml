@@ -81,7 +81,6 @@
         name: >
           Kui ei vasta, siis tuvastatakse, kas tekkinud viga on seotud eesti.ee või teenuse endaga ning lepitakse kokku edasised tegevused 
           vea kõrvaldamiseks.
-
 - name: 'II Ärilised ja tehnilised nõuded'
   title: 'II Ärilised ja tehnilised nõuded'
   requirements:
@@ -97,8 +96,7 @@
         Teenused, mis liidetakse eesti.ee-ga, peavad olema turvatestimisel saanud hinnangu _toodangukõlbulik_.
     - number: 2.1.3
       name: >
-        Teenuse ja eesti.ee liitumislahenduse turvatestimise tellib RIA pärast seda, kui punktis [2.2](https://e-gov.github.io/eesti-ee-mfn/#2.2) toodud nõuded teenuse visuaalile 
-        on täidetud. Turvatestimise kulud katab teenusepakkuja.
+        Teenuse ja eesti.ee liitumislahenduse (kui see on vajalik) turvatestimise tellib RIA pärast seda, kui punktis 2.2 toodud nõuded teenuse visuaalile on täidetud. Turvatestimise kulud katab teenusepakkuja.
       requirements:
       - number: 2.1.3.1
         name: >
@@ -106,371 +104,212 @@
           liidestuva teenuse testkeskkondade muutmine, uuendamine või muul moel manipuleerimine.
     - number: 2.1.4
       name: >
-        Isikustatud teenused peavad seansihoidlana kasutama kas riigiportaali TIMUR komponenti või olema liidestatud GovSSO-ga, juhul, 
-        kui teenus liidestub eesti.ee eraisiku vaadega.
-      requirements:
-      - number: 2.1.4.1
-        name: >
-          Juhul, kui liidestuv teenus soovib pakkuda teenust ka ettevõtja rollile/vaates (või ainult ettevõtja rollis/vaates), siis täna on 
-          sessiooni jagamiseks võimalik kasutada ainult TIMURi komponenti.
+        Teenus peab kasutama täiskomplektseid testandmeid, mida on võimalik eesti.ee testkeskkonnas (stage) teenuse testimisel välja kuvada.
     - number: 2.1.5
       name: >
-        Teenuse testkeskond peab kasutama täiskomplektseid testandmeid, mida on võimalik eesti.ee testkeskkonnas (stage) teenuse testimisel 
-        välja kuvada.
+          Kui teenus on liidestatud X-tee'ga, siis peavad ka X-tee testkeskkonnas olema teenuse testimiseks täiskomplektsed testandmed. Kui need andmed on seotud kindlate testisikutega, tuleb testisikute andmed edastada haldajale.
     - number: 2.1.6
       name: >
-        Kui teenus on liidestatud X-tee'ga, siis peavad ka X-tee testkeskkonnas olema teenuse testimiseks täiskomplektsed testandmed. Kui need 
-        andmed on seotud kindlate testisikutega, tuleb testisikute andmed edastada haldajale.
+        Liidestuva teenuse koodivaramusse ei ole soovituslik lisada pikemaid infoartikleid (va abitekstid).
     - number: 2.1.7
       name: >
-        Liidestuva teenuse koodivaramusse ei ole soovituslik lisada pikemaid infoartikleid (va abitekstid).
-      requirements:
-      - number: 2.1.7.1
-        name: >
-          Artiklite kuvamise ja haldusega seotud nõuded on kirjeldatud punktis 2.3.
-    - number: 2.1.8
-      name: >
-        Teenuse ja selles olevate andmete varundamine ei kuulu haldaja kohustuste hulka.
+        Teenuse ja selles olevate andmete varundamine ei kuulu haldaja kohustuste hulka.  
   - number: 2.2
     name: 'Nõuded teenuse visuaalile'
     requirements:
       - number: 2.2.1
         name: >
-          Teenuse loomiseks vajalikke visuaalseid elemente pakub haldaja.
+          Vorm peab olema ilma stiilideta
       - number: 2.2.2
         name: >
-          Kui olemasolevate seas ei leidu vajalikku elementi, siis tuleb uue elemendi loomisel lähtuda  eesti.ee stiiliraamatust (kuni selle 
-          valmimiseni täidab selle rolli Veera Figma). Juhul kui kaks eelmanitut sisaldavad sama komponenti, tuleb lähtuda eesti.ee stiiliraamatust.
-        requirements:
-          - number: 2.2.2.1
-            name: >
-              Juhul, kui mitut teenust arendatakse paralleelselt ning tekib vajadus uue, kuid samaväärse elemendi järele, siis peavad uued visuaalid 
-              olema kõigis arendustes samasugused. Näide: Kui luuakse kahte erinevat teenust ja mõlemas teenuses kasutatakse sama funktsiooni täitvat 
-              nuppu, siis peavad uued nupud olema visuaalselt identsed. Erandid kooskõlastatakse riigiportaaliga.
-          - number: 2.2.2.2
-            name: >
-              Veera disainisüsteem: https://www.figma.com/file/nNCV5kRqdRkS8MOCK1ZbqU/Veera-Design-System?numberde-id=5458%3A144 (kehtib kuni 
-              p [2.2.2.3](https://e-gov.github.io/eesti-ee-mfn/#2.2.2.3) mainitud stiiliraamatu valmimiseni)
-          - number: 2.2.2.3
-            name: >
-              eesti.ee stiiliraamat: täpne asukoht täpsustatakse (_valmib veebruari lõpp 2023_)
-          - number: 2.2.2.4
-            name: >
-              Riigiportaaliga tuleb kooskõlastada enne arendustegevuste algust:
-            requirements:
-              - number: 2.2.2.4.1
-                name: >
-                  Uued visuaalsed elemendid;
-              - number: 2.2.2.4.2
-                name: >
-                  Uute visuaalsete elementide dokumentatsioon;
-              - number: 2.2.2.4.3
-                name: >
-                  Lõplikud visuaalid;
+          Visuaalid pannakse HTML elementidele külge eesti.ee poolt
       - number: 2.2.3
-        name: 'Nõuded mobiilivaatele:'
+        name: >
+          Vorm ei tohi sisaldada HTML elemente, millel pole eesti.ee-s stiile küljes.    
         requirements:
-        - number: 2.2.3.1
-          name: >
-            Peab olema skaleeruv ehk seadmele kohanduv vastavalt riigiportaali poolt antud murdepunktidele (breakpoints);
-        - number: 2.2.3.2
-          name: >
-            Hoidma fookuses ühte tegevust/toimingut, näiteks menüü on peidetud e-teenuse vaates;
-        - number: 2.2.3.3
-          name: >
-            Sisu peab olema selgesti kättesaadav ja loetav, tehes minimaalse vajaliku arvu klikke vajaliku sisuni jõudmiseks;
-        - number: 2.2.3.4
-          name: >
-            Peab vältima kasutamist segavaid elemente nagu animatsioonid, bännerid, GIFid ja muud sisu tarbimist takistavad visuaalsed komponendid;
-        - number: 2.2.3.5
-          name: >
-            Tuleb vältida horisontaalset kerimist;
-        - number: 2.2.3.6
-          name: >
-            Ükski avatav element, nagu datepicker, dropdown menüüd jms, ei tohi väljuda ekraani vaateväljast ja peab mahutuma kuvatava 
-            ekraanilaiuse sisse;
-        - number: 2.2.3.7
-          name: >
-            Võimalusel minimeerida vertikaalset kerimist, kasutades sammu/protsessipõhist vaadet, kus sammud on välja toodud teenuse üleval ning 
-            hetkel aktiivsel sammul olev sakk on visuaalselt eristatud;
-        - number: 2.2.3.8
-          name: >
-            Teenusel kuvatavad vea-, info- ja hoiatusteated peavad kattuma eesti.ee teavitusevärvide ja kujundusega.
-                  
+          - number: 2.2.3.1
+            name: >
+              Toetatud elemendid on:
+			requirements:
+				- number: 2.2.3.1.1
+				  name: >
+					Sisestusväljad (ingl input fields);
+				- number: 2.2.3.1.2
+				  name: >
+					Nupud (ingl buttons);
+				- number: 2.2.3.1.3
+				  name: >
+					Lingid (ingl links);
+				- number: 2.2.3.1.4
+				  name: >
+					Abitekstid (ingl tooltip);
+				- number: 2.2.3.1.5
+				  name: >
+					Raadio nupud (ingl radio buttons);
+				- number: 2.2.3.1.6
+				  name: >
+					Märkeruut (ingl checkbox);
+				- number: 2.2.3.1.7
+				  name: >
+					Kalendrisisestusväli (ingl datepicker);
+				- number: 2.2.3.1.8
+				  name: >
+					Viisard (ingl wizard stepper)
+				- number: 2.2.3.1.9
+				  name: >
+					Faili üleslaadimine (ing file upload)    
       - number: 2.2.4
         name: >
-          Pildimaterjalide ja graafika kasutamine:
-        requirements:
-        - number: 2.2.4.1
-          name: >
-            Pildid peavad kasutama WEBP formaati või erandjuhul olema kohandatud veebis kasutamiseks läbi fototöötlus tarkvara;
-        - number: 2.2.4.2
-          name: >
-            Illustratsioonide kasutamisel peab eelistama SVG formaati;
-        - number: 2.2.4.3
-          name: >
-            Taustapildid ja gradiendid peavad olema CSSis base64 formaadis, et vähendada päringute arvu;
-        - number: 2.2.4.4
-          name: >
-            Piltide ja illustratsioonide/jooniste jmt lisamine teenustesse/rakendustesse jmt toimub pärast materjali kooskõlastamist riigiportaaliga.
-        
+          Eesti.ee poolt mitte toetatavad elemendid tuleb läbi rääkida eraldi. 
       - number: 2.2.5
         name: >
-          Otsuste tegemisel lähtutakse riigiportaalis kokkulepitud kasutajamugavuse printsiipidest, UI/UX parimatest praktikatest ning 
-          teenuse kasutatavusest erinevates seadmetes.
-      
+          Vormide funktsionaalne kasutatavus (JavaScript kood) sealhulgas ligipääsetavus  (WCAG 2.2 AA ja EN 301 549) peab olema tagatud vormi sees teenuse looja poolt.   
   - number: 2.3
-    name: 'Infoteenus'
-    sections:
-    - name: 'Üldnõuded'
-      requirements:
-      - number: 2.3.1
-        name: >
-          Otsuste tegemisel lähtutakse riigiportaalis kokkulepitud kasutajamugavuse printsiipidest, UI/UX parimatest praktikatest ning 
-          teenuse kasutatavusest erinevates seadmetes.
-      - number: 2.3.2
-        name: >
-          Kõikide artiklite puhul tuleb järgida ühtset eesti.ee-s kasutusel olevat keelelist stiili:
-        requirements:
-        - number: 2.3.2.1
-          name: >
-            asutuste nimed kirjutatakse eesti.ee-s väikese tähega;
-        - number: 2.3.2.2
-          name: >
-            kasutaja poole pöördutakse "Teie" või umbisikulist vormi kasutades;
-        - number: 2.3.2.3
-          name: >
-            Artiklite koostamisel tuleb arvestada [Sõbraliku sõna juhendis](https://www.eesti.ee/portaal/form.ffile?TPFAIL&FAIL&497) toodud soovitustega;
-      - number: 2.3.3
-        name: >
-          Artiklite struktuur peab vastama ühtsetele eesti.ee artiklite ülesehituse tavadele.
-        requirements:
-        - number: 2.3.3.1
-          name: >
-            Artikli kohustuslikud komponendid on:
-            * Sisuartikkel;
-            * Kokkuvõte;
-            * Teksti autorite loetelu asutuste täpsusega;
-            * Kontaktandmed, kuhu lõppkasutaja saab küsimuste korral pöörduda;
-            * Märksõnad (ingl. keyword, label);
-            * Vajadusel KKK, illustratsioonid, joonised vmt;
-            * Informatsiooni uuendamise kuupäev.
-        - number: 2.3.3.2
-          name: >
-            Artikli soovituslikud komponendid on
-            * Seotud seaduste nimekiri;
-            * Seotud teenuste nimekiri;
-            * Seotud asutuste nimekiri;
-            * Seotud artiklite nimekiri.
-      - number: 2.3.4
-        name: >
-          Kui punktis [2.3.3.2](https://e-gov.github.io/eesti-ee-mfn/#2.3.3.2) loetletud komponendid artikli jaoks eksisteerivad, 
-          siis peavad need olema artiklis viidatud.
-      - number: 2.3.5
-        name: >
-          Igale artiklile peab määrama vähemalt viis märksõna (keyword), mille järgi on artikkel leitav eesti.ee otsingust. 
-      - number: 2.3.6
-        name: >
-          Artiklite kuvamiseks eesti.ee lehel sisestatakse need eraldiseisvasse Artiklivaramu (ARVA) andmebaasi. ARVAle ülemineku 
-          aeg lepitakse kokku jooksvalt.
-      - number: 2.3.7
-        name: >
-          Artiklite tekstid peavad olema tõlgitud eesti, vene ja inglise keelde.
-      - number: 2.3.8
-        name: >
-          Infoteenuse asukoht eesti.ee vasakmenüüs lepitakse kokku koostöös riigiportaali ja teenusepakkujaga arvestades 
-          eesti.ee terviklikkust.
-      - number: 2.3.9
-        name: >
-          Artiklite juures olev tagasiside komponent on eesti.ee ülene ning selle eest vastutab haldaja.
-        requirements:
-        - number: 2.3.9.1
-          name: >
-            Uute püsivate küsitluste/tagasiside vormide loomine on keelatud.
-        - number: 2.3.9.2
-          name: >
-            Ajutised küsitlused peavad olema kooskõlastatud riigiportaaliga.
-    - name: 'Teenusepakkuja kohustused'
-      requirements:
-      - number: 2.3.10
-        name: >
-          Tekstide ajakohasena hoidmine( toimetamine, tõlgete tellimine ja sisestus) on teenusepakkuja vastutus.
-  - number: 2.4
     name: '**Isikustatud teenused**'
   - name: '**Ärilised nõuded**'
     sections:
     - name: 'Teenuse visuaal'
       requirements:
-      - number: 2.4.1
+      - number: 2.3.1
         name: >
           Teenuste arendamisel tuleb jälgida nõudeid, mis on kirjeldatud punktis [2.2](https://e-gov.github.io/eesti-ee-mfn/#2.2).
-      - number: 2.4.2
+      - number: 2.3.2
         name: >
-          Teenuse visuaalne asukoht eesti.ee lehel on haldaja määrata ning teenuse nimi tuleb eesti.ee-ga kooskõlastada.
-      - number: 2.4.3
+          Teenuse visuaalne asukoht eesti.ee lehel on haldaja määrata ning teenuse  nimi tuleb haldajaga kooskõlastada.
+      - number: 2.3.3
         name: >
           Lõppkasutajale kuvatavad teenuse tekstid (sh abitekstid, päringu vastused jmt) peavad olema tõlgitud eesti, vene ja inglise keelde.
-        requirements:
-        - number: 2.4.3.1
-          name: >
-            Lõppkasutajale kuvatavad teenuse tekstid (sh abitekstid, päringu vastused jmt) peavad olema tõlgitud eesti, vene ja inglise keelde.
     - name: 'Otsing ja tagasiside'
       requirements:
-      - number: 2.4.4
+      - number: 2.3.4
         name: >
           Teenuse juures olev tagasiside komponent on eesti.ee ülene ning selle eest vastutab haldaja.
         requirements:
-        - number: 2.4.4.1
+        - number: 2.3.4.1
           name: >
             Uute püsivate küsitluste/tagasiside vormide loomine on keelatud;
-        - number: 2.4.4.2
+        - number: 2.3.4.2
           name: >
-            Ajutised küsitlused peavad olema kooskõlastatud riigiportaaliga.
-      - number: 2.4.5
+            Ajutised küsitlused peavad olema kooskõlastatud haldajaga.
+      - number: 2.3.5
         name: >
-          Haldaja tagab vajaminevad otsingu baaskomponendi arendused. Otsing on eesti.ee ülene ning teenusesiseste otsingute loomine pole 
-          lubatud, va põhjendatud juhul, kui teistmoodi ei ole võimalik tagada teenuse kasutatavus. Lubatud on teenusesisesed filtrid.
+          Haldaja tagab vajaminevad otsingu baaskomponendi arendused. Otsing on eesti.ee ülene ning teenusesiseste otsingute loomine pole lubatud, va põhjendatud juhul, kui teistmoodi ei ole võimalik tagada teenuse kasutatavus. Lubatud on teenusesisesed filtrid.
     - name: 'Kasutajatugi'
       requirements:
-      - number: 2.4.6
+      - number: 2.3.6
         name: >
-          Iga teenuse puhul peab olema loodud teenuse dokumentatsioon, mis käsitleb endas teenuse tutvustust, mille põhjal RIA kasutajatugi 
-          saab kasutajaid juhendada.
+          Iga teenuse puhul peab olema loodud teenuse dokumentatsioon, mis käsitleb endas teenuse tutvustust, mille põhjal RIA kasutajatugi saab kasutajaid juhendada.
         requirements:
-        - number: 2.4.6.1
+        - number: 2.3.6.1
           name: >
-            Teenuses kuvatava ebakorrektse sisu kohta käivad küsimused ja keerulisemad probleemid suunatakse vaikimisi lahendamiseks 
-            teenusepakkuja kasutajatoele.
-      - number: 2.4.7
+            Teenuses kuvatava ebakorrektse sisu kohta käivad küsimused ja keerulisemad probleemid suunatakse vaikimisi lahendamiseks teenusepakkuja kasutajatoele.
+      - number: 2.3.7
         name: >
-          Teenuse juures peab olema teenusepakkuja nimi ja kasutajatoe kontakt (nii telefoninumber kui e-maili aadress), kuhu lõppkasutaja saab 
-          teenusega seotud küsimuste ja probleemidega pöörduda. 
+          Teenuse juures peab olema teenusepakkuja nimi ja kasutajatoe kontakt (nii telefoninumber kui e-maili aadress), kuhu lõppkasutaja saab teenusega seotud küsimuste ja probleemidega pöörduda.
   - name: '**Tehnilised nõuded**'
     sections:
     - name: 'Üldnõuded'
       requirements:
-      - number: 2.4.8
+      - number: 2.3.8
         name: >
-          Teenus peab sisaldama minimaalselt ühte elutukse otspunkti, mis peab olema masinloetav ning mida saab siduda eesti.ee automaatsete veateadete lahendusega.
+          Teenus peab sisaldama masinloetavat elutukse otspunkti, mis peab olema eesti.ee-le kättesaadav.
+    - name: 'Orbeon xForms'
+      requirements:
+      - number: 2.3.9
+        name: >
+          Orbeon XForms vormide arendamisel ja muutmisel peab lähtuma käesolevatest nõuetest ja juhendist"Orbeon XForms arendusjuhend 13.03.2023" 
+      - number: 2.3.10
+        name: >
+          Teenusepakkuja:
+        requirements:
+        - number: 2.3.10.1
+          name: >
+            teostab Orbeon XFormsi vormi(de) arenduse;
+        - number: 2.3.10.2
+          name: >
+            teeb vastava x-tee teenuse riigiportaalile (/GOV/70006317/riigiportaal-citizen) arendus-, test-, stage- ja toodangukeskkonnas kättesaadavaks;
+        - number: 2.3.10.3
+          name: >
+            testib XForms vormi enne selle toodangusse viimiist riigiportaali poolt;
+        - number: 2.3.10.4
+          name: >
+            teavitab riigiportaali vormi valmisolekust avaldamiseks toodangu keskkonnas.    
+        name: '**Uue vormi lisamisel**'
+        number: 2.3.11
+          name: >
+            Uue teenuse lisamisel peab teenusepakkuja  tegema uue avalduse.  Teenusepakkuja poolt volitatud isik täidab ja edastab iga uue teenuse liidestamise avalduse RIA kasutajatoele (help@ria.ee) või elektroonilise veebivormi kaudu. Avalduse vormi kehtestab haldaja.
+        - number: 2.3.12
+          name: >
+            Igakordsel uue vormi lisamisel peab teenuse omanik edastama riigiportaalile lisaks punktis 1.2 nõutud andmetele järgnevad andmed:
+          requirements:
+          - number: 2.3.12.1
+            name: >
+              Uue vormi faili nimi või nimed koos kausta teekonnaga või link koodivaramus olevale muudetud vormi failile
+          - number: 2.3.12.2
+            name: >
+              Soovituslik kuupäev, millal peab vorm jõudma toodangusse. Täpne kuupäev ja aeg lepitakse kokku riigiportaaliga.
+
+        name: '**Vormi muutmisel**'
+        number: 2.3.13
+          name: >
+            Igakordsel vormi muutmisel peab teenuse omanik edastama riigiportaalile järgnevad andmed:
+        requirements:
+          - number: 2.3.13.1
+            name: >
+              Kirjeldus, mida vormis muudeti.
+          - number: 2.3.13.2
+            name: >
+              Ekraanipildid olukorras "enne" ja "pärast", kus "pärast" piltidel on välja toodud muudetud kohad.
+          - number: 2.3.12.3
+            name: >
+              Muudetud vormi faili nimi või nimed koos kausta teekonnaga või link koodivaramus olevale muudetud vormi failile.
+          - number: 2.3.12.4
+            name: >
+              Soovituslik kuupäev, millal peab uuendatud vorm jõudma toodangusse. Täpne kuupäev ja aeg lepitakse kokku riigiportaaliga.
+        number: 2.3.14
+          name: >
+            Vormi muutmise sisu vormistatakse lepingu lisana.
+        number: 2.3.15
+          name: >
+            Juba olemasolevate failide asukohti ja nimetusi ning sisu **ei ole** lubatud muuta.
     - name: 'Otsing'
       requirements:
-      - number: 2.4.9
+      - number: 2.3.16
         name: >
           Teenuses olevad otsitavad andmed tuleb indekseerida minimaalselt Elasticsearch versioonis 7.x või Opensearch versioonis 2.5. Selleks saab kasutada riigiportaali 
           enda _Elasticsearch'i_ või teenuse juurde listakse eraldi _Elasticsearch_.
         requirements:
-        - number: 2.4.9.1
+        - number: 2.3.16.1
           name: >
             Riigiportaali tuleb informeerida, kui teenusele on üles seatud eraldi Elasticsearch, et teha vajalikud täiendavad liidestused;
-        - number: 2.4.9.2
+        - number: 2.3.16.2
           name: >
             Otsingu tulemused kuvatakse eesti.ee ühtsel otsingutulemuste lehel.
-    - name: 'NPM pakk'
-      requirements:
-      - number: 2.4.10
-        name: >
-          eesti.ee'ga liidestumisel NPM pakki kasutades on 2 (kaks) võimalust:
-        requirements:
-        - number: 2.4.10.1
-          name: >
-            liidestuv teenus loob NPM paki, mis ei sisalda päist, vasakmenüüd, jalust, vaid sisaldab ainult teenuse sisuosa. Sellisel juhul lisab riigiportaal 
-            teenuse ise eesti.ee-sse;
-        - number: 2.4.10.2
-          name: >
-            NPM core pakkide abil loob liidestuv teenus oma portaali, kus peab kasutama punktis [2.4.14](https://e-gov.github.io/eesti-ee-mfn/#2.4.14) toodud eesti.ee NPM põhi pakke.
-      - number: 2.4.11
-        name: >
-          Teenuse liidestamisel eesti.ee-ga punktis [2.4.12.1](https://e-gov.github.io/eesti-ee-mfn/#2.4.12.1) toodud viisil, peab NPM pakk sisaldama Angulari komponenti või komponente, mis vastavad järgmistele nõuetele:
-        requirements:
-        - number: 2.4.11.1
-          name: >
-            Angulari komponent peab kasutama minimaalset Angulari versiooni, mis on kasutusel riigiportaalis eesti.ee;
-        - number: 2.4.11.2
-          name: >
-            Pakk peab sisaldama dokumentatsiooni komponendi/komponentide kasutusele võtmiseks;
-        - number: 2.4.11.3
-          name: >
-            Pakk peab sisaldama komponendi automaatteste.
-      - number: 2.4.12
-        name: >
-          Teenuse liidestamisel eesti.ee-ga punktis [2.4.12.2](https://e-gov.github.io/eesti-ee-mfn/#2.4.12.2) toodud viisil peab teenus kasutama järgnevaid eesti.ee NPM põhi (ehk _core_) pakke (sulgudes on NPM paki nimi):
-        requirements:
-        - number: 2.4.12.1
-          name: >
-            vasakmenüü (_sidenav_);
-        - number: 2.4.12.2
-          name: >
-            ümbersuunamine (_redirect_);
-        - number: 2.4.12.3
-          name: >
-            päis (_header_);
-        - number: 2.4.12.4
-          name: >
-            otsing (_search_);
-        - number: 2.4.12.5
-          name: >
-            jalus (_footer_);
-        - number: 2.4.12.6
-          name: >
-            artikkel (_article_) (vastavalt vajadusele);
-        - number: 2.4.12.7
-          name: >
-            artikli tagasiside (_article_feedback_) (vastavalt vajadusele).
-      - number: 2.4.13
-        name: >
-          Isikustatud teenus on kohustatud kasutama lisaks NPM põhi (_core_) pakkidele ka järgnevaid NPM pakke:
-        requirements:
-        - number: 2.4.13.1
-          name: >
-            Timuri core pakk;
-        - number: 2.4.13.2
-          name: >
-            Timuri UI pakk.
-      - number: 2.4.14
-        name: >
-          Teenus peab kasutama minimaalset Angulari versiooni, mis on kasutusel eesti.ee-s.
-      - number: 2.4.15
-        name: >
-          NPM pakkide uute versioonide info edastatakse teenusepakkuja kontaktisikule kokkulepitud kanali kaudu. Kanal lepitakse kokku lepingus.
-        requirements:
-        - number: 2.4.15.1
-          name: >
-            Kanalisse lisatakse teenusepakkuja kontaktisik riigiportaali kontaktisiku poolt;
-        - number: 2.4.15.2
-          name: >
-            Teenusepakkuja kontaktisik on kohustatud jälgima nimetatud kanalit ning uue väikese muudatusega (minor change) NPM paki versiooni välja tulekul peab teenusepakkuja ise mõistliku aja 
-            jooksul kasutusele võtma kõige uuema NPM paki versiooni.
-      - number: 2.4.16
-        name: >
-          Suure ja kriitilise muudatusega (major ja breaking change) NPM pakkide kasutusele võtmine liidestuva teenuse poolt lepitakse iga kord eraldi kokku kontaktisikute vahel.
-      - number: 2.4.17
-        name: >
-          Riigiportaali poolt väljaantud NPM pakkide muutmine ja täiendamine ei ole lubatud, neid tuleb kasutada oma teenuse juures olemasoleval (_AS-IS_) kujul.
-  - number: 2.5
+  - number: 2.4
     name: '**Käideldavus**'
     sections:
     - name: 'Üldtingimused'
       requirements:
-      - number: 2.5.1
+      - number: 2.4.1
         name: >
           Käideldavuse osas tuleb lähtuda määruse "Eesti teabevärava eesti.ee haldamise, teabe kättesaadavaks tegemise, arendamise ning kasutamise nõuded ja kord"  § 15s sätesatust.
     - name: 'Korralised ja planeerimata teenuse katkestused'
       requirements:
-      - number: 2.5.2
+      - number: 2.4.2
         name: >
           Teenusega seotud korralisest katkestustest peab teenusepakkuja RIA kasutajatuge (help@ria.ee) teavitama vähemalt 48 tundi enne katkestuse toimumist.
         requirements:
-        - number: 2.5.2.1
+        - number: 2.4.2.1
           name: >
             Nädalavahetusel ja/või esmaspäeval toimuvatest katkestustest tuleb teavitada hiljemalt katkestusele eelneval reedel kell 10.00.
-      - number: 2.5.3
+      - number: 2.4.3
         name: >
           Korralise teenuse katkestuse korral eesti.ee lehel avaldatava teavituse teksti koostab ja edastab RIA kasutajatoele (help@ria.ee) teenusepakkuja kolmes keeles (eesti, vene ja inglise keeles).
         requirements:
-        - number: 2.5.3.1
+        - number: 2.4.3.1
           name: >
             Teavituse tekst peab olema korrektne, lõppkasutajale arusaadav ning sobilik eesti.ee-s avaldamiseks;
-      - number: 2.5.4
+      - number: 2.4.4
         name: >
           Teenusega seotud planeerimata katkestustest peab teenusepakkuja RIA kasutajatuge (help@ria.ee) teavitama niipea kui võimalik, märkides võimaluse korral katkestuse eeldatava lõppaja.
 
@@ -485,4 +324,4 @@
       Teenusepakkuja peab arvestama eesti.ee määruses toodud nõudeid: [https://www.riigiteataja.ee/akt/104102013008?leiaKehtiv](https://www.riigiteataja.ee/akt/104102013008?leiaKehtiv). 
   - number: 3.3
     name: >
-      Teenusepakkuja peab arvestama SDG määruses toodud nõudeid: [https://eur-lex.europa.eu/legal-content/ET/ALL/?uri=CELEX:62010TB0484(01)](https://eur-lex.europa.eu/legal-content/ET/ALL/?uri=CELEX:62010TB0484(01)).  
+      Teenusepakkuja peab arvestama SDG määruses toodud nõudeid: [https://eur-lex.europa.eu/legal-content/ET/ALL/?uri=CELEX:62010TB0484(01)](https://eur-lex.europa.eu/legal-content/ET/ALL/?uri=CELEX:62010TB0484(01)). 

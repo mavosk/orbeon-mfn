@@ -248,7 +248,6 @@
           - number: 2.3.12.2
             name: >
               Soovituslik kuupäev, millal peab vorm jõudma toodangusse. Täpne kuupäev ja aeg lepitakse kokku riigiportaaliga.
-
         name: '**Vormi muutmisel**'
         number: 2.3.13
           name: >

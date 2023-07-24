@@ -1,327 +1,346 @@
-- name: 'I Teenuste liidestamine eesti.ee-ga'
-  title: 'I Teenuste liidestamine eesti.ee-ga*'
-  notes: '*kehtib seni kuni ei ole hetkel kehtivat eesti.ee määrust muudetud'
+- name: "I Teenuste liidestamine eesti.ee-ga"
+  title: "I Teenuste liidestamine eesti.ee-ga*"
+  notes: "*kehtib seni kuni ei ole hetkel kehtivat eesti.ee määrust muudetud"
   requirements:
-  - number: 1.1
-    name: >
-      Teenusepakkuja poolt volitatud isik täidab ja edastab iga uue teenuse liidestamise avalduse RIA kasutajatoele (help@ria.ee) 
-      või elektroonilise veebivormi kaudu. Avalduse vormi kehtestab haldaja.
-  - number: 1.2
-    name: >
-      Hetkel kehtiva eesti.ee määruse põhjal täidab Teenusepakkuja avalduses järgnevad punktid:
+    - number: 1.1
+      name: >
+        Teenusepakkuja poolt volitatud isik täidab ja edastab iga uue teenuse liidestamise avalduse RIA kasutajatoele (help@ria.ee) 
+        või elektroonilise veebivormi kaudu. Avalduse vormi kehtestab haldaja.
+    - number: 1.2
+      name: >
+        Hetkel kehtiva eesti.ee määruse põhjal täidab Teenusepakkuja avalduses järgnevad punktid:
 
-      *   Teenuse nimi;
+        *   Teenuse nimi;
 
-      *   Teenuse sisu, osutamise põhimõtted ja eesmärk;
+        *   Teenuse sisu, osutamise põhimõtted ja eesmärk;
 
-          *   Vabas vormis kirjeldus teenusepakkujalt, mida teenus teeb ja miks on soov teenust eesti.ee-s pakkuda;
+            *   Vabas vormis kirjeldus teenusepakkujalt, mida teenus teeb ja miks on soov teenust eesti.ee-s pakkuda;
 
-      *   Teenuse kirjeldus;
+        *   Teenuse kirjeldus;
 
-          *   Lõppkasutajale mõeldud eesti.ee-s teenuse juures nähtav abitekst (eesti, vene ja inglise keeles);
+            *   Lõppkasutajale mõeldud eesti.ee-s teenuse juures nähtav abitekst (eesti, vene ja inglise keeles);
 
-      *   eesti.ee-ga liidestumise viis (xForms, NPM, MicroFrontend, muu);
+        *   eesti.ee-ga liidestumise viis (xForms, NPM, MicroFrontend, muu);
 
-      *   Teenusepakkuja kontaktandmed;
+        *   Teenusepakkuja kontaktandmed;
 
-      *   Teenuse osutamise aeg;
+        *   Teenuse osutamise aeg;
 
-          *   Teenuse osutamise aeg koos garanteeritud kasutajatoega;
+            *   Teenuse osutamise aeg koos garanteeritud kasutajatoega;
 
-      *   Teenuse lõppkasutajate kategooriad;
+        *   Teenuse lõppkasutajate kategooriad;
 
-      *   Teenuse lõppkasutajale esitatavad nõuded;
+        *   Teenuse lõppkasutajale esitatavad nõuded;
 
-          *   Vabas vormis kirjeldus Teenusepakkujalt, kui kasutajad küsivad seda infot;
+            *   Vabas vormis kirjeldus Teenusepakkujalt, kui kasutajad küsivad seda infot;
 
-          *   Lõppkasutajale esitatavad nõuded;
+            *   Lõppkasutajale esitatavad nõuded;
 
-      *   Teenuse kasutamiseks nõutav toiming;
+        *   Teenuse kasutamiseks nõutav toiming;
 
-      *   Teenuse kasutamise tulemus ja teenuse õiguslik tagajärg;
-          *   Õiguslikeks tagajärgedeks võivad olla:
-              *   Teenuse kasutamisel nõustub lõppkasutaja tema kohta tehtava isikuandmete päringuga;
+        *   Teenuse kasutamise tulemus ja teenuse õiguslik tagajärg;
+            *   Õiguslikeks tagajärgedeks võivad olla:
+                *   Teenuse kasutamisel nõustub lõppkasutaja tema kohta tehtava isikuandmete päringuga;
 
-              *   Läbi teenuse avalduse esitamisel antakse ametnikule luba lõppkasutaja andmeid töödelda ja kontrollida;
+                *   Läbi teenuse avalduse esitamisel antakse ametnikule luba lõppkasutaja andmeid töödelda ja kontrollida;
 
-              *   Näiteks kui kasutaja ei täida ettenähtud ajaks teenuses sisalduvat vormi või avaldust, siis talle ei määrata vastavat toetust või hüvitist;
+                *   Näiteks kui kasutaja ei täida ettenähtud ajaks teenuses sisalduvat vormi või avaldust, siis talle ei määrata vastavat toetust või hüvitist;
 
-      *   Teenuse tasulisus ja teenuse hind;
+        *   Teenuse tasulisus ja teenuse hind;
 
-      *   Teenuse osutamise õiguslik alus ja viited teenuse osutamist reguleerivale õigusakti sättele;
+        *   Teenuse osutamise õiguslik alus ja viited teenuse osutamist reguleerivale õigusakti sättele;
 
-      *   Maksimaalne ühel ajal teenust kasutavate lõppkasutajate arv, mille korral on tagatud teenuse kvaliteetne toimimine;
+        *   Maksimaalne ühel ajal teenust kasutavate lõppkasutajate arv, mille korral on tagatud teenuse kvaliteetne toimimine;
 
-      *   Teenuse planeeritud katkestusest RIA kasutajatoele etteteatamise aeg (vt punkti [2.5.2](https://e-gov.github.io/orbeon-mfn//#2.5.2));
+        *   Teenuse planeeritud katkestusest RIA kasutajatoele etteteatamise aeg (vt punkti [2.5.2](https://e-gov.github.io/orbeon-mfn//#2.5.2));
 
-      *   Teenuse tööajal planeeritud katkestuste maksimaalne kogukestus tundides;
+        *   Teenuse tööajal planeeritud katkestuste maksimaalne kogukestus tundides;
 
-      *   Teenuse ühe planeeritud katkestuse maksimaalne kestus tundides;
+        *   Teenuse ühe planeeritud katkestuse maksimaalne kestus tundides;
 
-      *   Teenuse ühekordse planeerimata katkestuse kestus tundides;
+        *   Teenuse ühekordse planeerimata katkestuse kestus tundides;
 
-      *   Teenuse tööajal planeerimata katkestuste kogukestus aastas tundides;
+        *   Teenuse tööajal planeerimata katkestuste kogukestus aastas tundides;
 
-      *   Teenuse E-ITS kaitsetarve.
-    
-  - number: 1.3
-    name: >
-      Teenuse liidestamine eesti.ee-ga või registeerimisest keeldumine toimub **maksimaalselt 20 tööpäeva** jooksul alates avalduse 
-      esitamisest. Selle käigus kontrollib haldaja teenuse nõuetele vastavust, tehnilist sobivust ning kasutatavust.
-  - number: 1.4
-    name: >
-      Teenusepakkuja kontrollib peale teenuse avaldamist eesti.ee eeltoodangu keskkonnas (stage keskkond), kas teenuse töökindlus ja 
-      vajalik funktsionaalsus vastab soovitule. Teenusepakkuja peab arvestama, et teenuse kasutamiseks vajalik funktsionaalsus peab 
-      tulema teenuse kaudu, mitte ei ole eesti.ee funktsionaalsusel põhinev.
-    requirements:
-      - number: 1.4.1
-        name: >
-          Kui vastab, avaldatakse teenus toodangu keskkonnas esimesel võimalusel.
-      - number: 1.4.2
-        name: >
-          Kui ei vasta, siis tuvastatakse, kas tekkinud viga on seotud eesti.ee või teenuse endaga ning lepitakse kokku edasised tegevused 
-          vea kõrvaldamiseks.
-- name: 'II Ärilised ja tehnilised nõuded'
-  title: 'II Ärilised ja tehnilised nõuded'
+        *   Teenuse E-ITS kaitsetarve.
+
+    - number: 1.3
+      name: >
+        Teenuse liidestamine eesti.ee-ga või registeerimisest keeldumine toimub **maksimaalselt 20 tööpäeva** jooksul alates avalduse 
+        esitamisest. Selle käigus kontrollib haldaja teenuse nõuetele vastavust, tehnilist sobivust ning kasutatavust.
+    - number: 1.4
+      name: >
+        Teenusepakkuja kontrollib peale teenuse avaldamist eesti.ee eeltoodangu keskkonnas (stage keskkond), kas teenuse töökindlus ja 
+        vajalik funktsionaalsus vastab soovitule. Teenusepakkuja peab arvestama, et teenuse kasutamiseks vajalik funktsionaalsus peab 
+        tulema teenuse kaudu, mitte ei ole eesti.ee funktsionaalsusel põhinev.
+      requirements:
+        - number: 1.4.1
+          name: >
+            Kui vastab, avaldatakse teenus toodangu keskkonnas esimesel võimalusel.
+        - number: 1.4.2
+          name: >
+            Kui ei vasta, siis tuvastatakse, kas tekkinud viga on seotud eesti.ee või teenuse endaga ning lepitakse kokku edasised tegevused 
+            vea kõrvaldamiseks.
+- name: "II Ärilised ja tehnilised nõuded"
+  title: "II Ärilised ja tehnilised nõuded"
   requirements:
-  - number: 2.1
-    name: '**Üldnõuded**'
-    requirements:
-    - number: 2.1.1
-      name: >
-        eesti.ee-ga liidestuvad teenused peavad arvestama lõppkasutaja keelevalikuga. Näiteks kui kasutaja on valinud eesti.ee 
-        kuvakeeleks inglise keele, siis ühelt teenuselt teisele liikumine ei tohi seda valikut mõjutada.
-    - number: 2.1.2
-      name: >
-        Teenused, mis liidetakse eesti.ee-ga, peavad olema turvatestimisel saanud hinnangu _toodangukõlbulik_.
-    - number: 2.1.3
-      name: >
-        Teenuse ja eesti.ee liitumislahenduse (kui see on vajalik) turvatestimise tellib RIA pärast seda, kui punktis 2.2 toodud nõuded teenuse visuaalile on täidetud. Turvatestimise kulud katab teenusepakkuja.
+    - number: 2.1
+      name: "**Üldnõuded**"
       requirements:
-      - number: 2.1.3.1
-        name: >
-          Liitumislahendust turvatestitakse eesti.ee ja liidestuva teenuse testkeskkondades. Testimise ajal ei ole lubatud eesti.ee ega 
-          liidestuva teenuse testkeskkondade muutmine, uuendamine või muul moel manipuleerimine.
-    - number: 2.1.4
-      name: >
-        Teenus peab kasutama täiskomplektseid testandmeid, mida on võimalik eesti.ee testkeskkonnas (stage) teenuse testimisel välja kuvada.
-    - number: 2.1.5
-      name: >
-          Kui teenus on liidestatud X-tee'ga, siis peavad ka X-tee testkeskkonnas olema teenuse testimiseks täiskomplektsed testandmed. Kui need andmed on seotud kindlate testisikutega, tuleb testisikute andmed edastada haldajale.
-    - number: 2.1.6
-      name: >
-        Liidestuva teenuse koodivaramusse ei ole soovituslik lisada pikemaid infoartikleid (va abitekstid).
-    - number: 2.1.7
-      name: >
-        Teenuse ja selles olevate andmete varundamine ei kuulu haldaja kohustuste hulka.  
-  - number: 2.2
-    name: 'Nõuded teenuse visuaalile'
-    requirements:
-      - number: 2.2.1
-        name: >
-          Vorm peab olema ilma stiilideta
-      - number: 2.2.2
-        name: >
-          Visuaalid pannakse HTML elementidele külge eesti.ee poolt
-      - number: 2.2.3
-        name: >
-          Vorm ei tohi sisaldada HTML elemente, millel pole eesti.ee-s stiile küljes.    
-        requirements:
-          - number: 2.2.3.1
-            name: >
-              Toetatud elemendid on:
-            requirements:
-              - number: 2.2.3.1.1
-                name: >
-                  Sisestusväljad (ingl input fields);
-              - number: 2.2.3.1.2
-                name: >
-                  Nupud (ingl buttons);
-              - number: 2.2.3.1.3
-                name: >
-                  Lingid (ingl links);
-              - number: 2.2.3.1.4
-                name: >
-                  Abitekstid (ingl tooltip);
-              - number: 2.2.3.1.5
-                name: >
-                  Raadio nupud (ingl radio buttons);
-              - number: 2.2.3.1.6
-                name: >
-                  Märkeruut (ingl checkbox);
-              - number: 2.2.3.1.7
-                name: >
-                  Kalendrisisestusväli (ingl datepicker);
-              - number: 2.2.3.1.8
-                name: >
-                  Viisard (ingl wizard stepper)
-              - number: 2.2.3.1.9
-                name: >
-                  Faili üleslaadimine (ing file upload)    
-      - number: 2.2.4
-        name: >
-          Eesti.ee poolt mitte toetatavad elemendid tuleb läbi rääkida eraldi. 
-      - number: 2.2.5
-        name: >
-          Vormide funktsionaalne kasutatavus (JavaScript kood) sealhulgas ligipääsetavus  (WCAG 2.2 AA ja EN 301 549) peab olema tagatud vormi sees teenuse looja poolt.   
-  - number: 2.3
-    name: '**Isikustatud teenused**'
-  - name: '**Ärilised nõuded**'
-    sections:
-    - name: 'Teenuse visuaal'
-      requirements:
-      - number: 2.3.1
-        name: >
-          Teenuste arendamisel tuleb jälgida nõudeid, mis on kirjeldatud punktis [2.2](https://e-gov.github.io/orbeon-mfn/#2.2).
-      - number: 2.3.2
-        name: >
-          Teenuse visuaalne asukoht eesti.ee lehel on haldaja määrata ning teenuse  nimi tuleb haldajaga kooskõlastada.
-      - number: 2.3.3
-        name: >
-          Lõppkasutajale kuvatavad teenuse tekstid (sh abitekstid, päringu vastused jmt) peavad olema tõlgitud eesti, vene ja inglise keelde.
-    - name: 'Otsing ja tagasiside'
-      requirements:
-      - number: 2.3.4
-        name: >
-          Teenuse juures olev tagasiside komponent on eesti.ee ülene ning selle eest vastutab haldaja.
-        requirements:
-        - number: 2.3.4.1
+        - number: 2.1.1
           name: >
-            Uute püsivate küsitluste/tagasiside vormide loomine on keelatud;
-        - number: 2.3.4.2
+            eesti.ee-ga liidestuvad teenused peavad arvestama lõppkasutaja keelevalikuga. Näiteks kui kasutaja on valinud eesti.ee 
+            kuvakeeleks inglise keele, siis ühelt teenuselt teisele liikumine ei tohi seda valikut mõjutada.
+        - number: 2.1.2
           name: >
-            Ajutised küsitlused peavad olema kooskõlastatud haldajaga.
-      - number: 2.3.5
-        name: >
-          Haldaja tagab vajaminevad otsingu baaskomponendi arendused. Otsing on eesti.ee ülene ning teenusesiseste otsingute loomine pole lubatud, va põhjendatud juhul, kui teistmoodi ei ole võimalik tagada teenuse kasutatavus. Lubatud on teenusesisesed filtrid.
-    - name: 'Kasutajatugi'
-      requirements:
-      - number: 2.3.6
-        name: >
-          Iga teenuse puhul peab olema loodud teenuse dokumentatsioon, mis käsitleb endas teenuse tutvustust, mille põhjal RIA kasutajatugi saab kasutajaid juhendada.
-        requirements:
-        - number: 2.3.6.1
+            Teenused, mis liidetakse eesti.ee-ga, peavad olema turvatestimisel saanud hinnangu _toodangukõlbulik_.
+        - number: 2.1.3
           name: >
-            Teenuses kuvatava ebakorrektse sisu kohta käivad küsimused ja keerulisemad probleemid suunatakse vaikimisi lahendamiseks teenusepakkuja kasutajatoele.
-      - number: 2.3.7
-        name: >
-          Teenuse juures peab olema teenusepakkuja nimi ja kasutajatoe kontakt (nii telefoninumber kui e-maili aadress), kuhu lõppkasutaja saab teenusega seotud küsimuste ja probleemidega pöörduda.
-  - name: '**Tehnilised nõuded**'
-    sections:
-    - name: 'Üldnõuded'
-      requirements:
-      - number: 2.3.8
-        name: >
-          Teenus peab sisaldama masinloetavat elutukse otspunkti, mis peab olema eesti.ee-le kättesaadav.
-    - name: 'Orbeon xForms'
-      requirements:
-      - number: 2.3.9
-        name: >
-          Orbeon XForms vormide arendamisel ja muutmisel peab lähtuma käesolevatest nõuetest ja juhendist"Orbeon XForms arendusjuhend 13.03.2023" 
-      - number: 2.3.10
-        name: >
-          Teenusepakkuja:
-        requirements:
-        - number: 2.3.10.1
-          name: >
-            teostab Orbeon XFormsi vormi(de) arenduse;
-        - number: 2.3.10.2
-          name: >
-            teeb vastava x-tee teenuse riigiportaalile (/GOV/70006317/riigiportaal-citizen) arendus-, test-, stage- ja toodangukeskkonnas kättesaadavaks;
-        - number: 2.3.10.3
-          name: >
-            testib XForms vormi enne selle toodangusse viimiist riigiportaali poolt;
-        - number: 2.3.10.4
-          name: >
-            teavitab riigiportaali vormi valmisolekust avaldamiseks toodangu keskkonnas.    
-        name: '**Uue vormi lisamisel**'
-        number: 2.3.11
-          name: >
-            Uue teenuse lisamisel peab teenusepakkuja  tegema uue avalduse.  Teenusepakkuja poolt volitatud isik täidab ja edastab iga uue teenuse liidestamise avalduse RIA kasutajatoele (help@ria.ee) või elektroonilise veebivormi kaudu. Avalduse vormi kehtestab haldaja.
-        - number: 2.3.12
-          name: >
-            Igakordsel uue vormi lisamisel peab teenuse omanik edastama riigiportaalile lisaks punktis 1.2 nõutud andmetele järgnevad andmed:
+            Teenuse ja eesti.ee liitumislahenduse (kui see on vajalik) turvatestimise tellib RIA pärast seda, kui punktis 2.2 toodud nõuded teenuse visuaalile on täidetud. Turvatestimise kulud katab teenusepakkuja.
           requirements:
-          - number: 2.3.12.1
-            name: >
-              Uue vormi faili nimi või nimed koos kausta teekonnaga või link koodivaramus olevale muudetud vormi failile
-          - number: 2.3.12.2
-            name: >
-              Soovituslik kuupäev, millal peab vorm jõudma toodangusse. Täpne kuupäev ja aeg lepitakse kokku riigiportaaliga.
+            - number: 2.1.3.1
+              name: >
+                Liitumislahendust turvatestitakse eesti.ee ja liidestuva teenuse testkeskkondades. Testimise ajal ei ole lubatud eesti.ee ega 
+                liidestuva teenuse testkeskkondade muutmine, uuendamine või muul moel manipuleerimine.
+        - number: 2.1.4
+          name: >
+            Teenus peab kasutama täiskomplektseid testandmeid, mida on võimalik eesti.ee testkeskkonnas (stage) teenuse testimisel välja kuvada.
+        - number: 2.1.5
+          name: >
+            Kui teenus on liidestatud X-tee'ga, siis peavad ka X-tee testkeskkonnas olema teenuse testimiseks täiskomplektsed testandmed. Kui need andmed on seotud kindlate testisikutega, tuleb testisikute andmed edastada haldajale.
+        - number: 2.1.6
+          name: >
+            Liidestuva teenuse koodivaramusse ei ole soovituslik lisada pikemaid infoartikleid (va abitekstid).
+        - number: 2.1.7
+          name: >
+            Teenuse ja selles olevate andmete varundamine ei kuulu haldaja kohustuste hulka.
+    - number: 2.2
+      name: "Nõuded teenuse visuaalile"
+      requirements:
+        - number: 2.2.1
+          name: >
+            Vorm peab olema ilma stiilideta
+        - number: 2.2.2
+          name: >
+            Visuaalid pannakse HTML elementidele külge eesti.ee poolt
+        - number: 2.2.3
+          name: >
+            Vorm ei tohi sisaldada HTML elemente, millel pole eesti.ee-s stiile küljes.
+          requirements:
+            - number: 2.2.3.1
+              name: >
+                Toetatud elemendid on:
+              requirements:
+                - number: 2.2.3.1.1
+                  name: >
+                    Sisestusväljad (ingl input fields);
+                - number: 2.2.3.1.2
+                  name: >
+                    Nupud (ingl buttons);
+                - number: 2.2.3.1.3
+                  name: >
+                    Lingid (ingl links);
+                - number: 2.2.3.1.4
+                  name: >
+                    Abitekstid (ingl tooltip);
+                - number: 2.2.3.1.5
+                  name: >
+                    Raadio nupud (ingl radio buttons);
+                - number: 2.2.3.1.6
+                  name: >
+                    Märkeruut (ingl checkbox);
+                - number: 2.2.3.1.7
+                  name: >
+                    Kalendrisisestusväli (ingl datepicker);
+                - number: 2.2.3.1.8
+                  name: >
+                    Viisard (ingl wizard stepper)
+                - number: 2.2.3.1.9
+                  name: >
+                    Faili üleslaadimine (ing file upload)
+        - number: 2.2.4
+          name: >
+            Eesti.ee poolt mitte toetatavad elemendid tuleb läbi rääkida eraldi.
+        - number: 2.2.5
+          name: >
+            Vormide funktsionaalne kasutatavus (JavaScript kood) sealhulgas ligipääsetavus
+            (WCAG 2.2 AA ja EN 301 549) peab olema tagatud vormi sees teenuse looja poolt.
+    - number: 2.3
+      name: "**Isikustatud teenused**"
+    - name: "**Ärilised nõuded**"
+      sections:
+        - name: "Teenuse visuaal"
+          requirements:
+            - number: 2.3.1
+              name: >
+                Teenuste arendamisel tuleb jälgida nõudeid, mis on kirjeldatud punktis [2.2](https://e-gov.github.io/orbeon-mfn/#2.2).
+            - number: 2.3.2
+              name: >
+                Teenuse visuaalne asukoht eesti.ee lehel on haldaja määrata ning teenuse  nimi tuleb haldajaga kooskõlastada.
+            - number: 2.3.3
+              name: >
+                Lõppkasutajale kuvatavad teenuse tekstid (sh abitekstid, päringu vastused jmt) peavad olema tõlgitud eesti, vene ja inglise keelde.
+        - name: "Otsing ja tagasiside"
+          requirements:
+            - number: 2.3.4
+              name: >
+                Teenuse juures olev tagasiside komponent on eesti.ee ülene ning selle eest vastutab haldaja.
+              requirements:
+                - number: 2.3.4.1
+                  name: >
+                    Uute püsivate küsitluste/tagasiside vormide loomine on keelatud;
+                - number: 2.3.4.2
+                  name: >
+                    Ajutised küsitlused peavad olema kooskõlastatud haldajaga.
+            - number: 2.3.5
+              name: >
+                Haldaja tagab vajaminevad otsingu baaskomponendi arendused. Otsing on eesti.ee ülene ning
+                teenusesiseste otsingute loomine pole lubatud, va põhjendatud juhul, kui teistmoodi ei ole
+                võimalik tagada teenuse kasutatavus. Lubatud on teenusesisesed filtrid.
+        - name: "Kasutajatugi"
+          requirements:
+            - number: 2.3.6
+              name: >
+                Iga teenuse puhul peab olema loodud teenuse dokumentatsioon, mis käsitleb endas teenuse
+                tutvustust, mille põhjal RIA kasutajatugi saab kasutajaid juhendada.
+              requirements:
+                - number: 2.3.6.1
+                  name: >
+                    Teenuses kuvatava ebakorrektse sisu kohta käivad küsimused ja keerulisemad probleemid
+                    suunatakse vaikimisi lahendamiseks teenusepakkuja kasutajatoele.
+            - number: 2.3.7
+              name: >
+                Teenuse juures peab olema teenusepakkuja nimi ja kasutajatoe kontakt (nii telefoninumber
+                kui e-maili aadress), kuhu lõppkasutaja saab teenusega seotud küsimuste ja probleemidega
+                pöörduda.
+    - name: "**Tehnilised nõuded**"
+      sections:
+        - name: "Üldnõuded"
+          requirements:
+            - number: 2.3.8
+              name: >
+                Teenus peab sisaldama masinloetavat elutukse otspunkti, mis peab olema eesti.ee-le kättesaadav.
+        - name: "Orbeon xForms"
+          requirements:
+            - number: 2.3.9
+              name: >
+                Orbeon XForms vormide arendamisel ja muutmisel peab lähtuma käesolevatest nõuetest ja juhendist
+                "Orbeon XForms arendusjuhend 13.03.2023"
+            - number: 2.3.10
+              name: >
+                Teenusepakkuja:
+              requirements:
+                - number: 2.3.10.1
+                  name: >
+                    teostab Orbeon XFormsi vormi(de) arenduse;
+                - number: 2.3.10.2
+                  name: >
+                    teeb vastava x-tee teenuse riigiportaalile (/GOV/70006317/riigiportaal-citizen) arendus-, test-, stage- ja toodangukeskkonnas kättesaadavaks;
+                - number: 2.3.10.3
+                  name: >
+                    testib XForms vormi enne selle toodangusse viimiist riigiportaali poolt;
+                - number: 2.3.10.4
+                  name: >
+                    teavitab riigiportaali vormi valmisolekust avaldamiseks toodangu keskkonnas.
+            - number: 2.3.11
+              name: "**Uue vormi lisamisel**"
+              requirements:
+                - name: >
+                    Uue teenuse lisamisel peab teenusepakkuja  tegema uue avalduse.  Teenusepakkuja poolt volitatud
+                    isik täidab ja edastab iga uue teenuse liidestamise avalduse RIA kasutajatoele (help@ria.ee)
+                    või elektroonilise veebivormi kaudu. Avalduse vormi kehtestab haldaja.
+                - number: 2.3.12
+                  name: >
+                    Igakordsel uue vormi lisamisel peab teenuse omanik edastama riigiportaalile lisaks punktis 1.2 nõutud andmetele järgnevad andmed:
+                  requirements:
+                    - number: 2.3.12.1
+                      name: >
+                        Uue vormi faili nimi või nimed koos kausta teekonnaga või link koodivaramus olevale muudetud vormi failile
+                    - number: 2.3.12.2
+                      name: >
+                        Soovituslik kuupäev, millal peab vorm jõudma toodangusse. Täpne kuupäev ja aeg lepitakse kokku riigiportaaliga.
+            - number: 2.3.13
+              name: "**Vormi muutmisel**"
+              requirements:
+                name: >
+                  Igakordsel vormi muutmisel peab teenuse omanik edastama riigiportaalile järgnevad andmed:
+                requirements:
+                  - number: 2.3.13.1
+                    name: >
+                      Kirjeldus, mida vormis muudeti.
+                  - number: 2.3.13.2
+                    name: >
+                      Ekraanipildid olukorras "enne" ja "pärast", kus "pärast" piltidel on välja toodud muudetud kohad.
+                  - number: 2.3.12.3
+                    name: >
+                      Muudetud vormi faili nimi või nimed koos kausta teekonnaga või link koodivaramus olevale muudetud vormi failile.
+                  - number: 2.3.12.4
+                    name: >
+                      Soovituslik kuupäev, millal peab uuendatud vorm jõudma toodangusse. Täpne kuupäev ja aeg lepitakse kokku riigiportaaliga.
+            - number: 2.3.14
+              name: >
+                Vormi muutmise sisu vormistatakse lepingu lisana.
+            - number: 2.3.15
+              name: >
+                Juba olemasolevate failide asukohti ja nimetusi ning sisu **ei ole** lubatud muuta.
+        - name: "Otsing"
+          requirements:
+            - number: 2.3.16
+              name: >
+                Teenuses olevad otsitavad andmed tuleb indekseerida minimaalselt Elasticsearch versioonis
+                7.x või Opensearch versioonis 2.5. Selleks saab kasutada riigiportaali
+                enda _Elasticsearch'i_ või teenuse juurde listakse eraldi _Elasticsearch_.
+              requirements:
+                - number: 2.3.16.1
+                  name: >
+                    Riigiportaali tuleb informeerida, kui teenusele on üles seatud eraldi Elasticsearch, et
+                    teha vajalikud täiendavad liidestused;
+                - number: 2.3.16.2
+                  name: >
+                    Otsingu tulemused kuvatakse eesti.ee ühtsel otsingutulemuste lehel.
+    - number: 2.4
+      name: "**Käideldavus**"
+      sections:
+        - name: "Üldtingimused"
+          requirements:
+            - number: 2.4.1
+              name: >
+                Käideldavuse osas tuleb lähtuda määruse "Eesti teabevärava eesti.ee haldamise, teabe kättesaadavaks
+                tegemise, arendamise ning kasutamise nõuded ja kord"  § 15s sätesatust.
+        - name: "Korralised ja planeerimata teenuse katkestused"
+          requirements:
+            - number: 2.4.2
+              name: >
+                Teenusega seotud korralisest katkestustest peab teenusepakkuja RIA kasutajatuge (help@ria.ee)
+                teavitama vähemalt 48 tundi enne katkestuse toimumist.
+              requirements:
+                - number: 2.4.2.1
+                  name: >
+                    Nädalavahetusel ja/või esmaspäeval toimuvatest katkestustest tuleb teavitada hiljemalt katkestusele eelneval reedel kell 10.00.
+            - number: 2.4.3
+              name: >
+                Korralise teenuse katkestuse korral eesti.ee lehel avaldatava teavituse teksti koostab ja edastab
+                RIA kasutajatoele (help@ria.ee) teenusepakkuja kolmes keeles (eesti, vene ja inglise keeles).
+              requirements:
+                - number: 2.4.3.1
+                  name: >
+                    Teavituse tekst peab olema korrektne, lõppkasutajale arusaadav ning sobilik eesti.ee-s avaldamiseks;
+            - number: 2.4.4
+              name: >
+                Teenusega seotud planeerimata katkestustest peab teenusepakkuja RIA kasutajatuge (help@ria.ee)
+                teavitama niipea kui võimalik, märkides võimaluse korral katkestuse eeldatava lõppaja.
 
-        name: '**Vormi muutmisel**'
-        number: 2.3.13
-          name: >
-            Igakordsel vormi muutmisel peab teenuse omanik edastama riigiportaalile järgnevad andmed:
-        requirements:
-          - number: 2.3.13.1
-            name: >
-              Kirjeldus, mida vormis muudeti.
-          - number: 2.3.13.2
-            name: >
-              Ekraanipildid olukorras "enne" ja "pärast", kus "pärast" piltidel on välja toodud muudetud kohad.
-          - number: 2.3.12.3
-            name: >
-              Muudetud vormi faili nimi või nimed koos kausta teekonnaga või link koodivaramus olevale muudetud vormi failile.
-          - number: 2.3.12.4
-            name: >
-              Soovituslik kuupäev, millal peab uuendatud vorm jõudma toodangusse. Täpne kuupäev ja aeg lepitakse kokku riigiportaaliga.
-        number: 2.3.14
-          name: >
-            Vormi muutmise sisu vormistatakse lepingu lisana.
-        number: 2.3.15
-          name: >
-            Juba olemasolevate failide asukohti ja nimetusi ning sisu **ei ole** lubatud muuta.
-    - name: 'Otsing'
-      requirements:
-      - number: 2.3.16
-        name: >
-          Teenuses olevad otsitavad andmed tuleb indekseerida minimaalselt Elasticsearch versioonis 7.x või Opensearch versioonis 2.5. Selleks saab kasutada riigiportaali 
-          enda _Elasticsearch'i_ või teenuse juurde listakse eraldi _Elasticsearch_.
-        requirements:
-        - number: 2.3.16.1
-          name: >
-            Riigiportaali tuleb informeerida, kui teenusele on üles seatud eraldi Elasticsearch, et teha vajalikud täiendavad liidestused;
-        - number: 2.3.16.2
-          name: >
-            Otsingu tulemused kuvatakse eesti.ee ühtsel otsingutulemuste lehel.
-  - number: 2.4
-    name: '**Käideldavus**'
-    sections:
-    - name: 'Üldtingimused'
-      requirements:
-      - number: 2.4.1
-        name: >
-          Käideldavuse osas tuleb lähtuda määruse "Eesti teabevärava eesti.ee haldamise, teabe kättesaadavaks tegemise, arendamise ning kasutamise nõuded ja kord"  § 15s sätesatust.
-    - name: 'Korralised ja planeerimata teenuse katkestused'
-      requirements:
-      - number: 2.4.2
-        name: >
-          Teenusega seotud korralisest katkestustest peab teenusepakkuja RIA kasutajatuge (help@ria.ee) teavitama vähemalt 48 tundi enne katkestuse toimumist.
-        requirements:
-        - number: 2.4.2.1
-          name: >
-            Nädalavahetusel ja/või esmaspäeval toimuvatest katkestustest tuleb teavitada hiljemalt katkestusele eelneval reedel kell 10.00.
-      - number: 2.4.3
-        name: >
-          Korralise teenuse katkestuse korral eesti.ee lehel avaldatava teavituse teksti koostab ja edastab RIA kasutajatoele (help@ria.ee) teenusepakkuja kolmes keeles (eesti, vene ja inglise keeles).
-        requirements:
-        - number: 2.4.3.1
-          name: >
-            Teavituse tekst peab olema korrektne, lõppkasutajale arusaadav ning sobilik eesti.ee-s avaldamiseks;
-      - number: 2.4.4
-        name: >
-          Teenusega seotud planeerimata katkestustest peab teenusepakkuja RIA kasutajatuge (help@ria.ee) teavitama niipea kui võimalik, märkides võimaluse korral katkestuse eeldatava lõppaja.
-
-- name: 'III Muud nõuded'
-  title: 'III Muud nõuded'
+- name: "III Muud nõuded"
+  title: "III Muud nõuded"
   requirements:
-  - number: 3.1
-    name: >
-      Teenusepakkuja peab arvestama eesti.ee ekspluatatsiooninõuetega: [Kinnitatud sla-d](https://confluence.ria.ee/display/RTKS/Kinnitatud+sla-d). 
-  - number: 3.2
-    name: >
-      Teenusepakkuja peab arvestama eesti.ee määruses toodud nõudeid: [https://www.riigiteataja.ee/akt/104102013008?leiaKehtiv](https://www.riigiteataja.ee/akt/104102013008?leiaKehtiv). 
-  - number: 3.3
-    name: >
-      Teenusepakkuja peab arvestama SDG määruses toodud nõudeid: [https://eur-lex.europa.eu/legal-content/ET/ALL/?uri=CELEX:62010TB0484(01)](https://eur-lex.europa.eu/legal-content/ET/ALL/?uri=CELEX:62010TB0484(01)). 
+    - number: 3.1
+      name: >
+        Teenusepakkuja peab arvestama eesti.ee ekspluatatsiooninõuetega: [Kinnitatud sla-d](https://confluence.ria.ee/display/RTKS/Kinnitatud+sla-d).
+    - number: 3.2
+      name: >
+        Teenusepakkuja peab arvestama eesti.ee määruses toodud nõudeid:
+        [https://www.riigiteataja.ee/akt/104102013008?leiaKehtiv](https://www.riigiteataja.ee/akt/104102013008?leiaKehtiv).
+    - number: 3.3
+      name: >
+        Teenusepakkuja peab arvestama SDG määruses toodud nõudeid:
+        [https://eur-lex.europa.eu/legal-content/ET/ALL/?uri=CELEX:62010TB0484(01)](https://eur-lex.europa.eu/legal-content/ET/ALL/?uri=CELEX:62010TB0484(01)).
